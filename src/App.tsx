@@ -16,6 +16,7 @@ import Alert from "./components/Alert"
 import Lottie from "./components/Lottie"
 import Secrets from "./components/Secrets"
 import Helps from "./components/Helps"
+import Products from "./components/Products"
 
 function App() {
   const { product } = useApp()
@@ -103,6 +104,10 @@ function App() {
 
       <Testimonials />
 
+      <Space height="75px" />
+      
+      <Products />
+      
       <Space height="75px" />
 
       <RelatedInfos />

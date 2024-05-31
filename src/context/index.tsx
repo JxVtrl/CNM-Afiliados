@@ -32,7 +32,16 @@ export type Product = {
     list: {
     title: string
     content: string
-  }[]}
+    }[]
+  }
+  productSell: {
+    title: string
+    text: string
+    price: number
+    type: 'popular' | 'default'
+    link: string
+    image: string
+  }[]
   quiz: {
     title: string
     options: {

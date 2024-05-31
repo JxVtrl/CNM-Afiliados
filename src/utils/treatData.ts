@@ -5,10 +5,8 @@ export const treatData = (
   choosenProduct: number | string
 ): Product | null => {
   if (!data) return null
-  console.log(data,choosenProduct)
   
   const choosen = data.find((item) => item.fields.id == choosenProduct)
-  console.log(choosen.fields.favicon)
   
   const id = choosen.fields.id
   const logo = choosen.fields.logo.fields.file.url
@@ -21,6 +19,7 @@ export const treatData = (
   const description = choosen.fields.description
   const productVideo = choosen.fields.productVideo 
   const productImage = choosen.fields.productPicture?.fields.file.url || ''
+  const productSell = choosen.fields.productSell.products
   const link = choosen.fields.link
   const testimonialTitle = choosen.fields.testimonialTitle
   const faq = choosen.fields.faq
@@ -37,6 +36,7 @@ export const treatData = (
     favicon,
     title,
     text,
+    productSell,
     backgroundColor,
     alert,
     textColor,
