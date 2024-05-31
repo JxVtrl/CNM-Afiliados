@@ -112,10 +112,6 @@ function App() {
       
       <Space height="75px" />
 
-      <RelatedInfos />
-
-      <Space height="75px" />
-
       <Security />
 
       <Space height="135px" />

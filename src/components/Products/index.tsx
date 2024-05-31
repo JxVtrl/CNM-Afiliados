@@ -121,23 +121,9 @@ const Products: React.FC = () => {
 
               <Space height="10px" />
 
-              <motion.div
-                whileHover={{ scale: [1.05, 0.95, 1.05] }}
-                transition={{
-                  duration: 1.5,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              >
-                <Button
-                  className="w-full h-[55px]"
-                  onClick={() => {
-                    window.location.href = item.link
-                  }}
-                >
-                  COMPRAR AGORA
-                </Button>
-              </motion.div>
+              <a href={item.link}>
+                <Button className="w-full h-[55px]">COMPRAR AGORA</Button>
+              </a>
             </div>
           </div>
         ))}
