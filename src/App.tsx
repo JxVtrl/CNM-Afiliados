@@ -14,6 +14,7 @@ import Wallpaper from "./components/Wallpaper"
 import Video from "./components/Video"
 import Alert from "./components/Alert"
 import Lottie from "./components/Lottie"
+import Secrets from "./components/Secrets"
 
 function App() {
   const { product } = useApp()
@@ -89,6 +90,11 @@ function App() {
       </Wrapper>
 
       <Space height="75px" />
+      
+      <Secrets />
+      
+      <Space height="75px" />
+      
 
       <Testimonials />
 

@@ -5,13 +5,15 @@ import CTAButton from "../CTAButton"
 
 const Testimonials: React.FC = () => {
   const { product } = useApp()
-  
-  if(!product) return null
-  
+
+  if (!product) return null
+
   return (
-    <Wrapper classes={{
-          content: "items-center gap-5",
-        }}>
+    <Wrapper
+      classes={{
+        content: "items-center gap-5",
+      }}
+    >
       <h2
         dangerouslySetInnerHTML={{
           __html: product?.testimonials.title ?? "",
@@ -23,14 +25,14 @@ const Testimonials: React.FC = () => {
             <iframe
               src={testimonial.src}
               title={testimonial.name}
-              className="w-full min-h-[450px] max-h-[500px] rounded-md"
+              className="w-full h-[170px] rounded-md"
             />
-            
+
             <p>{testimonial.name}</p>
           </div>
         ))}
       </div>
-        <CTAButton />
+      <CTAButton />
     </Wrapper>
   )
 }
