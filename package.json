@@ -19,6 +19,7 @@
     "clsx": "^2.0.0",
     "contentful": "^10.6.5",
     "framer-motion": "^10.16.4",
+    "gsap": "^3.12.5",
     "lucide-react": "^0.290.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",

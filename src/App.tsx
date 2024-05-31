@@ -13,12 +13,12 @@ import Space from "./components/Space"
 import Wallpaper from "./components/Wallpaper"
 import Video from "./components/Video"
 import Alert from "./components/Alert"
+import Lottie from "./components/Lottie"
 
 function App() {
   const { product } = useApp()
 
-  if (!product) return <div className="flex items-center justify-center h-full w-full">Sem produto para exibir</div>
-
+  if (!product) return <Lottie/>
   return (
     <main className="relative flex flex-col">
       <Wallpaper />
