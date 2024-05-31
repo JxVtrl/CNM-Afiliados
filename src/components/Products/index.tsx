@@ -37,12 +37,20 @@ const Products: React.FC = () => {
       </h3>
       <Space height="25px" />
 
-      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 w-full">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 w-full relative">
         {product?.productSell.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center gap-5 text-center bg-white p-2 w-full rounded-md shadow-md"
-          >
+            className="flex flex-col items-center gap-5 text-center bg-white p-2 w-full rounded-md shadow-md pt-10"
+            >
+                {item.type === 'popular' && <div className="bg-yellow-500 text-white p-2 rounded-md
+    absolute
+    top-[-20px]
+
+">Mais Vendido</div>}
+                
+                
+                
             <h3
               className="text-xl font-bold"
               dangerouslySetInnerHTML={{
