@@ -3,6 +3,7 @@ import React from "react"
 import Wrapper from "../Wrapper"
 import Space from "../Space"
 import { Button } from "../ui/button"
+import { motion } from "framer-motion"
 
 const Products: React.FC = () => {
   const { product } = useApp()
@@ -42,15 +43,19 @@ const Products: React.FC = () => {
           <div
             key={index}
             className="flex flex-col items-center gap-5 text-center bg-white p-2 w-full rounded-md shadow-md pt-10"
-            >
-                {item.type === 'popular' && <div className="bg-yellow-500 text-white p-2 rounded-md
+          >
+            {item.type === "popular" && (
+              <div
+                className="bg-yellow-500 text-white p-2 rounded-md
     absolute
     top-[-20px]
 
-">Mais Vendido</div>}
-                
-                
-                
+"
+              >
+                Mais Vendido
+              </div>
+            )}
+
             <h3
               className="text-xl font-bold"
               dangerouslySetInnerHTML={{
@@ -116,14 +121,23 @@ const Products: React.FC = () => {
 
               <Space height="10px" />
 
-              <Button
-                className="w-full h-[55px]"
-                onClick={() => {
-                  window.location.href = item.link
+              <motion.div
+                whileHover={{ scale: [1.05, 0.95, 1.05] }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
                 }}
               >
-                COMPRAR AGORA
-              </Button>
+                <Button
+                  className="w-full h-[55px]"
+                  onClick={() => {
+                    window.location.href = item.link
+                  }}
+                >
+                  COMPRAR AGORA
+                </Button>
+              </motion.div>
             </div>
           </div>
         ))}
