@@ -15,6 +15,7 @@ import Video from "./components/Video"
 import Alert from "./components/Alert"
 import Lottie from "./components/Lottie"
 import Secrets from "./components/Secrets"
+import Helps from "./components/Helps"
 
 function App() {
   const { product } = useApp()
@@ -92,6 +93,10 @@ function App() {
       <Space height="75px" />
       
       <Secrets />
+      
+      <Space height="75px" />
+      
+      <Helps/>
       
       <Space height="75px" />
       
