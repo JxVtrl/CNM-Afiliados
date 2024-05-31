@@ -18,14 +18,12 @@ import Lottie from "./components/Lottie"
 function App() {
   const { product } = useApp()
 
-  if (!product) return <Lottie/>
+  if (!product) return <Lottie />
   return (
     <main className="relative flex flex-col">
       <Wallpaper />
-      
+
       <Alert />
-      
-      <Logo />
 
       <Wrapper classes={{ content: "gap-5 flex flex-col items-center" }}>
         <h1
@@ -33,11 +31,28 @@ function App() {
             __html: product?.title || "",
           }}
           style={{
-          textTransform: 'uppercase'
+            textTransform: "uppercase",
           }}
         />
-        <p>{product?.description}</p>
-        
+      </Wrapper>
+
+      <Logo />
+
+      <Wrapper classes={{ content: "gap-5 flex flex-col items-center" }}>
+        <h1
+          dangerouslySetInnerHTML={{
+            __html: product?.description || "",
+          }}
+          style={{
+            textTransform: "uppercase",
+          }}
+        />
+        <p
+          dangerouslySetInnerHTML={{
+            __html: product?.text || "",
+          }}
+        />
+
         {product?.productImage ? (
           <img src={product?.productImage} alt={product?.title} />
         ) : product?.productVideo ? (
@@ -61,7 +76,6 @@ function App() {
       <Space height="135px" />
 
       <Faq />
-
 
       <Footer />
 
