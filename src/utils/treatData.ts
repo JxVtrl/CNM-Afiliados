@@ -8,12 +8,14 @@ export const treatData = (
   console.log(data,choosenProduct)
   
   const choosen = data.find((item) => item.fields.id == choosenProduct)
+  console.log(choosen.fields.favicon)
   
   const id = choosen.fields.id
   const logo = choosen.fields.logo.fields.file.url
   const alert = choosen.fields.alert
   const title = choosen.fields.title
   const text = choosen.fields.text
+  const favicon = choosen.fields.favicon.fields.file.url
   const description = choosen.fields.description
   const productVideo = choosen.fields.productVideo 
   const productImage = choosen.fields.productPicture?.fields.file.url || ''
@@ -30,6 +32,7 @@ export const treatData = (
 
   return {
     id,
+    favicon,
     title,
     text,
     alert,

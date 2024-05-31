@@ -19,6 +19,13 @@ function App() {
   const { product } = useApp()
 
   if (!product) return <Lottie />
+  
+  document.title = product.title
+  
+  const favicon = document.querySelector("link[rel='icon']")
+  favicon?.setAttribute('href', product.favicon)
+ 
+  
   return (
     <main className="relative flex flex-col">
       <Wallpaper />

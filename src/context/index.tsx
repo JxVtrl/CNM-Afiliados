@@ -14,6 +14,7 @@ export type Product = {
   alert: string
   title: string
   text: string
+  favicon: string
   description: string
   link: string
   productImage?: string
