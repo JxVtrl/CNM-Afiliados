@@ -10,7 +10,7 @@ const Logo: React.FC = () => {
     <div className="w-full flex items-center justify-center py-10">
       <img
         src={
-          product?.logo ||
+          'https:'+product?.logo ||
           ""
         }
         alt={product?.title || "logo"}
