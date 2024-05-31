@@ -2,6 +2,7 @@ import { useApp } from "@/context"
 import React from "react"
 import Wrapper from "../Wrapper"
 import Space from "../Space"
+import { Button } from "../ui/button"
 
 const Products: React.FC = () => {
   const { product } = useApp()
@@ -42,9 +43,12 @@ const Products: React.FC = () => {
             key={index}
             className="flex flex-col items-center gap-5 text-center bg-white p-2 w-full rounded-md shadow-md"
           >
-                <h3 className="text-xl font-bold" dangerouslySetInnerHTML={{
-                    __html: item.title
-                    }}/>
+            <h3
+              className="text-xl font-bold"
+              dangerouslySetInnerHTML={{
+                __html: item.title,
+              }}
+            />
             <p className="text-sm text-gray-500">{item.text}</p>
             <img
               src={item.image}
@@ -97,6 +101,21 @@ const Products: React.FC = () => {
                 })}{" "}
                 à vista
               </small>
+
+              <Space height="10px" />
+
+              <small>Frete Grátis</small>
+
+              <Space height="10px" />
+
+              <Button
+                className="w-full"
+                onClick={() => {
+                  window.location.href = item.link
+                }}
+              >
+                COMPRAR AGORA
+              </Button>
             </div>
           </div>
         ))}
