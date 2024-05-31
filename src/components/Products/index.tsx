@@ -63,7 +63,7 @@ const Products: React.FC = () => {
               alt={item.title}
               className="w-full h-[300px] object-cover rounded-md"
             />
-            <div>
+            <div className="w-full">
               <small
                 style={{
                   lineHeight: 0.5,
@@ -117,7 +117,7 @@ const Products: React.FC = () => {
               <Space height="10px" />
 
               <Button
-                className="w-full"
+                className="w-full h-[55px]"
                 onClick={() => {
                   window.location.href = item.link
                 }}
