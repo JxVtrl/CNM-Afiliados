@@ -11,6 +11,7 @@ import React, {
 
 export type Product = {
   id: number
+  alert: string
   title: string
   description: string
   link: string

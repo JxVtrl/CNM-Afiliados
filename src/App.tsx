@@ -12,6 +12,7 @@ import Logo from "./components/Logo"
 import Space from "./components/Space"
 import Wallpaper from "./components/Wallpaper"
 import Video from "./components/Video"
+import Alert from "./components/Alert"
 
 function App() {
   const { product } = useApp()
@@ -21,12 +22,18 @@ function App() {
   return (
     <main className="relative flex flex-col">
       <Wallpaper />
+      
+      <Alert />
+      
       <Logo />
 
       <Wrapper classes={{ content: "gap-5 flex flex-col items-center" }}>
         <h1
           dangerouslySetInnerHTML={{
             __html: product?.title || "",
+          }}
+          style={{
+          textTransform: 'uppercase'
           }}
         />
         <p>{product?.description}</p>

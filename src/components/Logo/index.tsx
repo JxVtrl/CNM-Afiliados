@@ -7,13 +7,18 @@ const Logo: React.FC = () => {
   if(!product) return null
   
   return (
-    <div className="w-full flex items-center justify-center py-10">
+    <div className="w-full flex items-center justify-center py-10 ">
       <img
         src={
           'https:'+product?.logo ||
           ""
         }
         alt={product?.title || "logo"}
+        className="max-w-[500px] max-h-[500px] w-full"
+        style={{
+          aspectRatio: 1,
+        }}
+        
       />
     </div>
   )

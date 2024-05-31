@@ -11,6 +11,7 @@ export const treatData = (
   
   const id = choosen.fields.id
   const logo = choosen.fields.logo.fields.file.url
+  const alert = choosen.fields.alert
   const title = choosen.fields.title
   const description = choosen.fields.description
   const productVideo = choosen.fields.productVideo 
@@ -29,6 +30,7 @@ export const treatData = (
   return {
     id,
     title,
+    alert,
     link,
     productImage,
     productVideo,
