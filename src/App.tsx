@@ -53,6 +53,9 @@ function App() {
       {/* <Wallpaper /> */}
 
       <Alert />
+      
+      <Space height="45px" />
+      
 
       <Wrapper classes={{ content: "gap-5 flex flex-col items-center" }}>
         <h1
