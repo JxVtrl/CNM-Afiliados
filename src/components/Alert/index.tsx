@@ -21,7 +21,6 @@ const Alert: React.FC = () => {
       text-center
       font-bold
       text-2xl
-    text-blue-900
 
 "
       >

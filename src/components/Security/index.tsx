@@ -8,14 +8,14 @@ const Security: React.FC = () => {
   return (
     <Wrapper
         classes={{
-          content: "text-white gap-5 flex flex-col",
+          content: "gap-5 flex flex-col",
         }}
       >
       <h2>
           <b>Satisfação total</b> ou seu dinheiro de volta!
         </h2>
       <div
-        className="bg-white text-black py-10 px-5 text-center relative max-w-[720px] gap-5 flex flex-col m-auto"
+        className="py-10 px-5 text-center relative max-w-[720px] gap-5 flex flex-col m-auto"
         style={{
           borderRadius: "10px 42px 10px 10px",
         }}

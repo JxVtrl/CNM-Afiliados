@@ -16,6 +16,8 @@ export const treatData = (
   const title = choosen.fields.title
   const text = choosen.fields.text
   const favicon = choosen.fields.favicon.fields.file.url
+  const textColor = choosen.fields.textColor
+  const backgroundColor = choosen.fields.backgroundColor
   const description = choosen.fields.description
   const productVideo = choosen.fields.productVideo 
   const productImage = choosen.fields.productPicture?.fields.file.url || ''
@@ -35,7 +37,9 @@ export const treatData = (
     favicon,
     title,
     text,
+    backgroundColor,
     alert,
+    textColor,
     link,
     productImage,
     productVideo,

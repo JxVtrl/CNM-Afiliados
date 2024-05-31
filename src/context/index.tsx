@@ -12,6 +12,8 @@ import React, {
 export type Product = {
   id: number
   alert: string
+  backgroundColor: string
+  textColor: string
   title: string
   text: string
   favicon: string

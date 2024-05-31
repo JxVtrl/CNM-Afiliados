@@ -72,7 +72,7 @@ const Quiz: React.FC = () => {
               </Button>
             </div>
             <header className="flex items-center h-fit justify-between w-full">
-              <h4 className="text-black">{question?.title}</h4>
+              <h4>{question?.title}</h4>
               
             </header>
           </>
@@ -97,11 +97,11 @@ const Quiz: React.FC = () => {
                   setCurrentQuestion(currentQuestion + 1)
                 }}
               >
-                <span className="text-black">{item?.value}</span>
+                <span>{item?.value}</span>
               </motion.div>
             )})
           ) : (
-            <div className="w-full flex flex-col items-center justify-center text-black">
+            <div className="w-full flex flex-col items-center justify-center">
                 <span>Você terminou o quiz!</span>
                 <span>Redirecionando...</span>
             </div>

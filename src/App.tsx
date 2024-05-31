@@ -24,11 +24,31 @@ function App() {
   
   const favicon = document.querySelector("link[rel='icon']")
   favicon?.setAttribute('href', product.favicon)
- 
+  
+  const span = document.querySelectorAll('span')
+  span.forEach(el => el.style.color = product.textColor)
+  
+  const p = document.querySelectorAll('p')
+  p.forEach(el => el.style.color = product.textColor)
+
+  const h1 = document.querySelectorAll('h1')
+  h1.forEach(el => el.style.color = product.textColor)
+  
+  const h2 = document.querySelectorAll('h2')
+  h2.forEach(el => el.style.color = product.textColor)
+  
+  const h3 = document.querySelectorAll('h3')
+  h3.forEach(el => el.style.color = product.textColor)
+  
+  const h4 = document.querySelectorAll('h4')
+  h4.forEach(el => el.style.color = product.textColor)
+  
   
   return (
-    <main className="relative flex flex-col">
-      <Wallpaper />
+    <main className={`relative flex flex-col`} style={{
+      backgroundColor: product.backgroundColor,
+    }}>
+      {/* <Wallpaper /> */}
 
       <Alert />
 
