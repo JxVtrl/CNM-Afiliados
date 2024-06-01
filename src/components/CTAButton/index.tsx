@@ -10,7 +10,7 @@ const CTAButton: React.FC = () => {
   if (!product) return null
 
   return (
-    <div className="relative h-[50px] w-full md:w-[450px]">
+    <div className="relative h-[75px] w-full md:w-[450px]">
       <motion.div
         animate={{
           scale: [1.05, 0.95, 1.05],
@@ -24,7 +24,20 @@ const CTAButton: React.FC = () => {
       >
         <a href="#product_rated">
         <Button
-          className="bg-green-500 w-full"
+            className="bg-green-500 w-full h-full
+            text-white
+            font-bold
+            text-xl
+            rounded-md
+            shadow-md
+            hover:bg-green-600
+            transition-all
+            duration-300
+            ease-in-out
+
+
+
+"
           onClick={() => {
             useAnalyticsEvent({
               category: "CTA",
@@ -36,7 +49,6 @@ const CTAButton: React.FC = () => {
           {product?.ctaCall}
           </Button>
         </a>
-          
       </motion.div>
     </div>
   )
