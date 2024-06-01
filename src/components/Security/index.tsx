@@ -3,7 +3,6 @@ import { flags } from "@/utils/flags"
 import React from "react"
 import Wrapper from "../Wrapper"
 import CTAButton from "../CTAButton"
-import Space from "../Space"
 
 const Security: React.FC = () => {
   return (
