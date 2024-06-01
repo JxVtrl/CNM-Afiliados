@@ -98,13 +98,10 @@ const Products: React.FC = () => {
                       currency: "BRL",
                     }
                   )}
-                </del>
-                <br />
+                </del>{' '}
                 por apenas
                 <br />
               </small>
-              <Space height="10px" />
-
               <h2 className="font-bold">12x de </h2>
               <h1
                 className="m-0 p-0 
