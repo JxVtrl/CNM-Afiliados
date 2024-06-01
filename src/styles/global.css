@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+	position:relative;
+	overflow-x:hidden;
+}
+
 html {
   scroll-behavior: smooth;
   width: 100vw;
