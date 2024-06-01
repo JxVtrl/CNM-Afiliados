@@ -16,6 +16,7 @@ import Lottie from "./components/Lottie"
 import Secrets from "./components/Secrets"
 import Helps from "./components/Helps"
 import Products from "./components/Products"
+import SpecialistSay from "./components/SpecialistSay"
 
 function App() {
   const { product } = useApp()
@@ -103,6 +104,9 @@ function App() {
       
       <Space height="75px" />
       
+      <SpecialistSay />
+      
+      <Space height="75px" />
 
       <Testimonials />
 

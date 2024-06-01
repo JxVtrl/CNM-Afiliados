@@ -7,10 +7,6 @@ import { useAnalyticsEvent } from "@/utils/useAnalyticsEvent"
 const CTAButton: React.FC = () => {
   const { product } = useApp()
 
-  const redirect = () => {
-    window.location.href = product?.link || ""
-  }
-
   if (!product) return null
 
   return (
@@ -26,10 +22,10 @@ const CTAButton: React.FC = () => {
         }}
         className="absolute w-full h-full"
       >
+        <a href="#product_rated">
         <Button
           className="bg-green-500 w-full"
           onClick={() => {
-            redirect()
             useAnalyticsEvent({
               category: "CTA",
               action: "click",
@@ -38,7 +34,9 @@ const CTAButton: React.FC = () => {
           }}
         >
           {product?.ctaCall}
-        </Button>
+          </Button>
+        </a>
+          
       </motion.div>
     </div>
   )

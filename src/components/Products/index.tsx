@@ -38,7 +38,7 @@ const Products: React.FC = () => {
       </h3>
       <Space height="25px" />
 
-      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 w-full relative">
+      <div className=" grid grid-cols-2 md:grid-cols-4 gap-5 w-full relative">
         {product?.productSell.map((item, index) => (
           <div
             key={index}
@@ -46,6 +46,7 @@ const Products: React.FC = () => {
           >
             {item.type === "popular" && (
               <div
+                id='product_rated'
                 className="bg-yellow-500 text-white p-2 rounded-md
     absolute
     top-[-20px]
@@ -98,9 +99,9 @@ const Products: React.FC = () => {
               <h2 className="text-2xl font-bold">12x de </h2>
               <h1
                 className="m-0 p-0 
-                    text-5xl
+                    text-4xl
+md:text-5xl
                     font-bold
-
 "
               >
                 {calculateAndFormatParcel(item.price, 12)}

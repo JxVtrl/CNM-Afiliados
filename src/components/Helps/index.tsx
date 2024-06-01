@@ -1,6 +1,7 @@
 import React from "react"
 import Wrapper from "../Wrapper"
 import Space from "../Space"
+import CTAButton from "../CTAButton"
 
 const Helps: React.FC = () => {
   return (
@@ -56,7 +57,10 @@ const Helps: React.FC = () => {
 ">{item.text}</p>
           </div>
         ))}
-          </div>
+      </div>
+      
+      <Space height="25px" />
+      <CTAButton />
     </Wrapper>
   )
 }

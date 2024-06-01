@@ -1,6 +1,7 @@
 import React from "react"
 import Wrapper from "../Wrapper"
 import Space from "../Space"
+import CTAButton from "../CTAButton"
 
 const Secrets: React.FC = () => {
   return (
@@ -62,7 +63,11 @@ const Secrets: React.FC = () => {
 ">{item.text}</p>
           </div>
         ))}
-          </div>
+      </div>
+      
+      <Space height="25px" />
+        <CTAButton />
+      
     </Wrapper>
   )
 }

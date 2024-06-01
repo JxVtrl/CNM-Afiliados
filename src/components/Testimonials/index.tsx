@@ -21,15 +21,16 @@ const Testimonials: React.FC = () => {
       />
       <div className="flex flex-row flex-wrap justify-center gap-5">
         {product?.testimonials.list?.map((testimonial, index) => (
-          <div className="flex flex-col items-center" key={index}>
-            <iframe
+          <iframe
+           key={index}
               src={testimonial.src}
               title={testimonial.name}
-              className="w-full h-[170px] rounded-md"
+            className="w-full
+md:w-[unset]
+  aspect-w-16
+  aspect-h-9
+ rounded-md"
             />
-
-            <p>{testimonial.name}</p>
-          </div>
         ))}
       </div>
       <CTAButton />
