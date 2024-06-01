@@ -1,6 +1,7 @@
 import React from 'react';
 import Wrapper from '../Wrapper';
 import Space from '../Space';
+import CTAButton from '../CTAButton';
 
 const MeetOurInstalations: React.FC = () => {
     return (
@@ -9,7 +10,7 @@ const MeetOurInstalations: React.FC = () => {
             Conheça nossas instalações
             </h1>
             
-            <Space height="20px" />
+            <Space height="35px" />
             
         <div className="w-full max-w-[750px] h-full min-h-[350px] max-h-[500px]">
       <iframe
@@ -23,7 +24,11 @@ const MeetOurInstalations: React.FC = () => {
           maxHeight: "500px",
         }}
       ></iframe>
-            </div>
+        </div>
+        
+        <Space height="20px" />
+        
+        <CTAButton />
 </Wrapper>
             
             );

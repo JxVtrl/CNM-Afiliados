@@ -1,6 +1,7 @@
 import React from "react"
 import Wrapper from "../Wrapper"
 import Space from "../Space"
+import CTAButton from "../CTAButton"
 
 // import { Container } from './styles';
 
@@ -8,6 +9,8 @@ const ModeOfUse: React.FC = () => {
   return (
     <Wrapper>
       <h1>Qual o modo correto de uso?</h1>
+      
+      <Space height="20px" />
 
       <div
         className="
@@ -81,6 +84,9 @@ place-self-center
               
               </div>
       </div>
+      
+      <Space height="20px" />
+      <CTAButton />
     </Wrapper>
   )
 }
