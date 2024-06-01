@@ -3,7 +3,6 @@ import Wrapper from "./components/Wrapper"
 import Quiz from "./components/Quiz"
 import { Toaster } from "./components/ui/toaster"
 import Testimonials from "./components/Testimonials"
-import RelatedInfos from "./components/RelatedInfos"
 import Security from "./components/Security"
 import Faq from "./components/Faq"
 import Footer from "./components/Footer"
@@ -17,6 +16,7 @@ import Secrets from "./components/Secrets"
 import Helps from "./components/Helps"
 import Products from "./components/Products"
 import SpecialistSay from "./components/SpecialistSay"
+import ModeOfUse from "./components/ModeOfUse"
 
 function App() {
   const { product } = useApp()
@@ -108,6 +108,10 @@ function App() {
       
       <Space height="75px" />
 
+<ModeOfUse />      
+      
+      <Space height="75px" />
+      
       <Testimonials />
 
       <Space height="75px" />
