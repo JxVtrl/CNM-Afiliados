@@ -3,6 +3,8 @@ import React from "react"
 import Wrapper from "../Wrapper"
 import Space from "../Space"
 import { Button } from "../ui/button"
+import SimpleSwiper from "../SimpleSwiper"
+import { SwiperSlide } from "swiper/react"
 
 const Products: React.FC = () => {
   const { product } = useApp()
@@ -37,11 +39,22 @@ const Products: React.FC = () => {
       </h3>
       <Space height="25px" />
 
-      <div className=" grid grid-cols-2 md:grid-cols-4 gap-5 w-full relative">
+      <SimpleSwiper
+        spaceBetween={10}
+        breakpoints={{
+          768: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        }}      
+        pagination={false}
+      >
         {product?.productSell.map((item, index) => (
-          <div
+          <SwiperSlide
             key={index}
-            className="flex flex-col items-center gap-5 text-center bg-white p-2 w-full rounded-md shadow-md pt-10"
+           className="bg-white p-5 rounded-md relative"
           >
             {item.type === "popular" && (
               <div
@@ -125,9 +138,9 @@ md:text-5xl
                 <Button className="w-full h-[55px]">COMPRAR AGORA</Button>
               </a>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </SimpleSwiper>
       
       <Space height="35px" />
       

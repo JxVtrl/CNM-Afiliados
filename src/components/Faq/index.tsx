@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/accordion"
 import { useApp } from "@/context"
 import Wrapper from "../Wrapper"
+import Space from "../Space"
 
 const Faq: React.FC = () => {
   const { product } = useApp()
@@ -26,11 +27,13 @@ const Faq: React.FC = () => {
           __html: product?.faq.title || "",
         }}
       />
+      <Space height="25px" />
       <Accordion type="multiple" className="mb-5 w-full">
         {faqList.map((question, index) => (
           <AccordionItem key={index} value={question.title}>
             <AccordionTrigger>
               <h4
+                className="text-start"
                 dangerouslySetInnerHTML={{
                   __html: question.title || "",
                 }}

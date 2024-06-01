@@ -3,6 +3,7 @@ import { flags } from "@/utils/flags"
 import React from "react"
 import Wrapper from "../Wrapper"
 import CTAButton from "../CTAButton"
+import Space from "../Space"
 
 const Security: React.FC = () => {
   return (
@@ -59,11 +60,10 @@ const Security: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="w-[175px] absolute bottom-[-75px] left-[-75px]">
+        <div className="w-[175px] m-auto md:absolute md:bottom-[-75px] md:left-[-75px]">
           <img src="src/assets/selo.png" alt="selo" />
         </div>
       </div>
-      
       <CTAButton/>
     </Wrapper>
   )
