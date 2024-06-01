@@ -1,7 +1,6 @@
 import React from 'react';
 import Wrapper from '../Wrapper';
-
-// import { Container } from './styles';
+import Space from '../Space';
 
 const MeetOurInstalations: React.FC = () => {
     return (
@@ -10,6 +9,7 @@ const MeetOurInstalations: React.FC = () => {
             Conheça nossas instalações
             </h1>
             
+            <Space height="20px" />
             
         <div className="w-full max-w-[750px] h-full min-h-[350px] max-h-[500px]">
       <iframe

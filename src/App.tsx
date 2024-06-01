@@ -18,6 +18,7 @@ import Products from "./components/Products"
 import SpecialistSay from "./components/SpecialistSay"
 import ModeOfUse from "./components/ModeOfUse"
 import MeetOurInstalations from "./components/MeetOurInstalations"
+import MorePowerful from "./components/MorePowerful"
 
 function App() {
   const { product } = useApp()
@@ -118,6 +119,9 @@ function App() {
       
       <Space height="75px" />
       
+      <MorePowerful />
+      
+      <Space height="75px" />
       
       <Testimonials />
 
