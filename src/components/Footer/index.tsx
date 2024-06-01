@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
     }}>
       <hr />
 
-      <span
+      <small
         className="text-left"
         dangerouslySetInnerHTML={{
           __html: product?.footerContent || "",
