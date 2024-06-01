@@ -128,6 +128,13 @@ md:text-5xl
           </div>
         ))}
       </div>
+      
+      <Space height="35px" />
+      
+      <img src='https://champyxoficial.com/wp-content/uploads/2024/03/comprasegura.webp'
+        alt="Compra Segura"
+        className="w-[350px] h-[75px] object-cover rounded-md"
+      />
     </Wrapper>
   )
 }
