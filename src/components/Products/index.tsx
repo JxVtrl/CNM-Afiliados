@@ -3,7 +3,6 @@ import React from "react"
 import Wrapper from "../Wrapper"
 import Space from "../Space"
 import { Button } from "../ui/button"
-import { motion } from "framer-motion"
 
 const Products: React.FC = () => {
   const { product } = useApp()
