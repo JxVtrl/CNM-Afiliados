@@ -10,7 +10,7 @@ const CTAButton: React.FC = () => {
   if (!product) return null
 
   return (
-    <div className="relative h-[50px] w-[450px]">
+    <div className="relative h-[50px] w-full md:w-[450px]">
       <motion.div
         animate={{
           scale: [1.05, 0.95, 1.05],
