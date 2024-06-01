@@ -75,7 +75,7 @@ flex flex-col justify-between gap-5
         </ul>
               <div className="
 flex flex-col align-center justify-center
-
+place-self-center
 ">
 <img src="https://champyxoficial.com/wp-content/uploads/2024/03/1-2-1024x1024.png" alt="Modo de uso" width={500} height={500} />
               

@@ -31,6 +31,10 @@ Chegou a hora de tomar o controle da sua vida e dizer adeus ao cigarro de uma ve
                 src='https://champyxoficial.com/wp-content/uploads/2024/03/frasco-3-1024x1024.png'
                 width={500}
                 height={500}
+                className='
+place-self-center
+
+'
             />
             
             
