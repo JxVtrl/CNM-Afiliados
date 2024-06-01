@@ -14,7 +14,7 @@ const Logo: React.FC = () => {
           ""
         }
         alt={product?.title || "logo"}
-        className="max-w-[500px] max-h-[500px] w-full"
+        className="max-w-[350px] max-h-[350px] w-full"
         style={{
           aspectRatio: 1,
         }}

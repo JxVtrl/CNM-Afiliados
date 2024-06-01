@@ -13,7 +13,7 @@ const Alert: React.FC = () => {
     flex
     items-center
     justify-center
-    py-10
+    py-6
       bg-yellow-500
       text-white
 "
