@@ -17,6 +17,7 @@ import Helps from "./components/Helps"
 import Products from "./components/Products"
 import SpecialistSay from "./components/SpecialistSay"
 import ModeOfUse from "./components/ModeOfUse"
+import MeetOurInstalations from "./components/MeetOurInstalations"
 
 function App() {
   const { product } = useApp()
@@ -111,6 +112,12 @@ function App() {
 <ModeOfUse />      
       
       <Space height="75px" />
+      
+      
+      <MeetOurInstalations />
+      
+      <Space height="75px" />
+      
       
       <Testimonials />
 
