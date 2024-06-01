@@ -48,11 +48,9 @@ const Helps: React.FC = () => {
                     rounded-md
 " />
                 <h3 className="
-                    text-xl
                     font-bold
 ">{item.title}</h3>
                 <p className="
-                    text-sm
                     text-gray-500
 ">{item.text}</p>
           </div>

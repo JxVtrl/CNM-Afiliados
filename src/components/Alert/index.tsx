@@ -22,8 +22,6 @@ const Alert: React.FC = () => {
         className="
       text-center
       font-bold
-      text-2xl
-
 "
       >
         {product?.alert || ""}

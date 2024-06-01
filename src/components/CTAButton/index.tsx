@@ -27,7 +27,6 @@ const CTAButton: React.FC = () => {
             className="bg-green-500 w-full h-full
             text-white
             font-bold
-            text-xl
             rounded-md
             shadow-md
             hover:bg-green-600

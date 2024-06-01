@@ -70,12 +70,12 @@ const Products: React.FC = () => {
             )}
 
             <h3
-              className="text-xl font-bold"
+              className="font-bold"
               dangerouslySetInnerHTML={{
                 __html: item.title,
               }}
             />
-            <p className="text-sm text-gray-500">{item.text}</p>
+            <p className="text-gray-500">{item.text}</p>
             <img
               src={item.image}
               alt={item.title}
@@ -83,10 +83,7 @@ const Products: React.FC = () => {
             />
             <div className="w-full">
               <small
-                style={{
-                  lineHeight: 0.5,
-                  fontSize: 16,
-                }}
+               
               >
                 De{" "}
                 <del
@@ -108,11 +105,9 @@ const Products: React.FC = () => {
               </small>
               <Space height="10px" />
 
-              <h2 className="text-2xl font-bold">12x de </h2>
+              <h2 className="font-bold">12x de </h2>
               <h1
                 className="m-0 p-0 
-                    text-4xl
-md:text-5xl
                     font-bold
 "
               >

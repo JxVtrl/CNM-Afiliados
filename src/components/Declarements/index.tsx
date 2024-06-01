@@ -85,9 +85,6 @@ py-5
     
 text-start
 text-gray-600
-text-sm
-
-
 ">{item.text}</p>
           </li>
         ))}

@@ -23,7 +23,6 @@ rounded-md
 shadow-md
 text-gray-900
 font-semibold
-text-sm
 sm:text-base
 
 
