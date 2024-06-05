@@ -8,7 +8,7 @@ const Video: React.FC = () => {
       <iframe
         src={product?.productVideo}
         title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         style={{
           width: "100%",
           height: "100%",

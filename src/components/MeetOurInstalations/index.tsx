@@ -16,7 +16,7 @@ const MeetOurInstalations: React.FC = () => {
       <iframe
         src='https://champyxoficial.com/wp-content/uploads/2024/03/Design-sem-nome-22.mp4'
         title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         style={{
           width: "100%",
           height: "100%",
