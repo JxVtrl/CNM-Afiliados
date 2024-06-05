@@ -37,8 +37,8 @@ const Security: React.FC = () => {
         </p>
         <div className="flex justify-around w-full mt-[24px] m-auto">
           <div className="grid grid-cols-2 gap-x-5">
-            {certifies.map((certify) => (
-              <div className="h-[50px] w-[75px]">
+            {certifies.map((certify, index) => (
+              <div className="h-[50px] w-[75px]" key={index}>
                 <img
                   src={certify.image}
                   alt={certify.name}
