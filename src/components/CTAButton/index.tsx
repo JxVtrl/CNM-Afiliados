@@ -28,34 +28,32 @@ const CTAButton: React.FC = () => {
         }}
         className="absolute w-full h-full"
       >
-        <a href="#product_rated">
-          <Button
-            className="bg-green-500 w-full h-full
-            text-white
-            font-bold
-            rounded-md
-            shadow-md
-            hover:bg-green-600
-            transition-all
-            duration-300
-            ease-in-out
+      <Button
+        className="bg-green-500 w-full h-full
+        text-white
+        font-bold
+        rounded-md
+        shadow-md
+        hover:bg-green-600
+        transition-all
+        duration-300
+        ease-in-out
 
 
 
 "
-            onClick={() => {
-              useAnalyticsEvent({
-                category: "CTA",
-                action: "click",
-                label: "Going to Checkout",
-              });
+        onClick={() => {
+          useAnalyticsEvent({
+            category: "CTA",
+            action: "click",
+            label: "Going to Checkout",
+          });
 
-              handleSlideToProductRated();
-            }}
-          >
-            {product?.ctaCall}
-          </Button>
-        </a>
+          handleSlideToProductRated();
+        }}
+      >
+        {product?.ctaCall}
+      </Button>
       </motion.div>
     </div>
   );
