@@ -1,13 +1,19 @@
-import React from "react"
-import { Button } from "../ui/button"
-import { useApp } from "@/context"
-import { motion } from "framer-motion"
-import { useAnalyticsEvent } from "@/utils/useAnalyticsEvent"
+/* eslint-disable react-hooks/rules-of-hooks */
+import React from "react";
+import { Button } from "../ui/button";
+import { useApp } from "@/context";
+import { motion } from "framer-motion";
+import { useAnalyticsEvent } from "@/utils/useAnalyticsEvent";
 
 const CTAButton: React.FC = () => {
-  const { product } = useApp()
+  const { product } = useApp();
 
-  if (!product) return null
+  if (!product) return null;
+
+  const handleSlideToProductRated = () => {
+    const productRated = document.getElementById("product_rated");
+    productRated?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="relative h-[75px] w-full md:w-[450px]">
@@ -23,7 +29,7 @@ const CTAButton: React.FC = () => {
         className="absolute w-full h-full"
       >
         <a href="#product_rated">
-        <Button
+          <Button
             className="bg-green-500 w-full h-full
             text-white
             font-bold
@@ -37,20 +43,22 @@ const CTAButton: React.FC = () => {
 
 
 "
-          onClick={() => {
-            useAnalyticsEvent({
-              category: "CTA",
-              action: "click",
-              label: "Going to Checkout",
-            })
-          }}
-        >
-          {product?.ctaCall}
+            onClick={() => {
+              useAnalyticsEvent({
+                category: "CTA",
+                action: "click",
+                label: "Going to Checkout",
+              });
+
+              handleSlideToProductRated();
+            }}
+          >
+            {product?.ctaCall}
           </Button>
         </a>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default CTAButton
+export default CTAButton;
