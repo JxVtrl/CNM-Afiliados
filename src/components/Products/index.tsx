@@ -50,6 +50,7 @@ const Products: React.FC = () => {
           },
         }}      
         pagination={false}
+        id='products'
       >
         {product?.productSell.map((item, index) => (
           <SwiperSlide
@@ -58,7 +59,6 @@ const Products: React.FC = () => {
           >
             {item.type === "popular" && (
               <div
-                id='product_rated'
                 className="bg-yellow-500 text-white p-2 rounded-md
     absolute
     top-[-20px]

@@ -11,12 +11,8 @@ const CTAButton: React.FC = () => {
   if (!product) return null;
 
   const handleSlideToProductRated = () => {
-    const productRated = document.getElementById("product_rated");
-    productRated?.scrollIntoView({ behavior: "smooth" });
-
-    if (navigator.userAgent.match(/Android/i)) {
-      window.scrollTo(0, productRated?.offsetTop || 0);
-    }
+    const productRated = document.getElementById("products");
+    window.scrollTo(0, productRated?.offsetTop || 0);
   };
 
   return (
