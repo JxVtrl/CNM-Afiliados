@@ -1,26 +1,26 @@
-import { useApp } from "@/context"
-import React from "react"
-import Wrapper from "../Wrapper"
-import Space from "../Space"
-import { Button } from "../ui/button"
-import SimpleSwiper from "../SimpleSwiper"
-import { SwiperSlide } from "swiper/react"
+import { useApp } from "@/context";
+import React from "react";
+import Wrapper from "../Wrapper";
+import Space from "../Space";
+import { Button } from "../ui/button";
+import SimpleSwiper from "../SimpleSwiper";
+import { SwiperSlide } from "swiper/react";
 
 const Products: React.FC = () => {
-  const { product } = useApp()
+  const { product } = useApp();
 
   const calculateFakeBeforeDiscount = (price: number) => {
-    const lastPrice = price * 1.15
-    return lastPrice
-  }
+    const lastPrice = price * 1.15;
+    return lastPrice;
+  };
 
   const calculateAndFormatParcel = (price: number, parcel: number) => {
-    const parcelPrice = price / parcel
+    const parcelPrice = price / parcel;
     return parcelPrice.toLocaleString("pt-br", {
       style: "currency",
       currency: "BRL",
-    })
-  }
+    });
+  };
 
   return (
     <Wrapper
@@ -48,15 +48,12 @@ const Products: React.FC = () => {
           1024: {
             slidesPerView: 4,
           },
-        }}      
+        }}
         pagination={false}
-        id='products'
+        id="products"
       >
         {product?.productSell.map((item, index) => (
-          <SwiperSlide
-            key={index}
-           className="bg-white p-5 rounded-md relative"
-          >
+          <SwiperSlide key={index} className="bg-white p-5 rounded-md relative">
             {item.type === "popular" && (
               <div
                 className="bg-yellow-500 text-white p-2 rounded-md
@@ -82,9 +79,7 @@ const Products: React.FC = () => {
               className="w-full h-[300px] object-cover rounded-md"
             />
             <div className="w-full">
-              <small
-               
-              >
+              <small>
                 De{" "}
                 <del
                   className="
@@ -98,7 +93,7 @@ const Products: React.FC = () => {
                       currency: "BRL",
                     }
                   )}
-                </del>{' '}
+                </del>{" "}
                 por apenas
                 <br />
               </small>
@@ -133,15 +128,16 @@ const Products: React.FC = () => {
           </SwiperSlide>
         ))}
       </SimpleSwiper>
-      
+
       <Space height="35px" />
-      
-      <img src='https://champyxoficial.com/wp-content/uploads/2024/03/comprasegura.webp'
+
+      <img
+        src="https://champyxoficial.com/wp-content/uploads/2024/03/comprasegura.webp"
         alt="Compra Segura"
         className="w-[350px] h-[75px] object-cover rounded-md"
       />
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;
