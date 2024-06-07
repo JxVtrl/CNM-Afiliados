@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { getEntries } from "@/lib/contenful"
 import { treatData } from "@/utils/treatData"
 import React, {
@@ -71,12 +72,15 @@ type ContextProps = {
   product: Product | null
   quizActive: boolean
   setQuizActive: React.Dispatch<React.SetStateAction<boolean>>
+  onProducts: boolean
+  setOnProducts: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const AppContext = createContext({} as ContextProps)
 
 export function AppProvider({ children }: { children: ReactNode }) {
   const CHOOSEN_PRODUCT = import.meta.env.VITE_CHOOSEN_PRODUCT
+  const [onProducts, setOnProducts] = useState(false)
 
   const [quizActive, setQuizActive] = useState(false)
   const [product, setProduct] = useState<Product | null>(null)
@@ -97,8 +101,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
       product,
       quizActive,
       setQuizActive,
+      onProducts,
+      setOnProducts
     }),
-    [product, quizActive, setQuizActive]
+    [product, quizActive, setQuizActive, onProducts, setOnProducts]
   )
 
   return (

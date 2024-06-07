@@ -6,13 +6,11 @@ import { motion } from "framer-motion";
 import { useAnalyticsEvent } from "@/utils/useAnalyticsEvent";
 
 const CTAButton: React.FC = () => {
-  const { product } = useApp();
-
+  const { product, setOnProducts } = useApp()
   if (!product) return null;
 
   const handleSlideToProductRated = () => {
-    const productRated = document.getElementById("products");
-    window.scrollTo(0, productRated?.offsetTop || 0);
+    setOnProducts(true)
   };
 
   return (
