@@ -1,6 +1,6 @@
 import React from 'react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperProps, SwiperRef } from 'swiper/react';
+import { Swiper, SwiperProps } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -8,7 +8,6 @@ import 'swiper/css/pagination';
 interface SimpleSwiperProps extends SwiperProps {
   children: React.ReactNode;
   className?: string;
-  ref?: React.Ref<SwiperRef>;
 }
 
 const SimpleSwiper: React.FC<SimpleSwiperProps> = ({ children, className, ...rest }) => {

@@ -56,7 +56,6 @@ const Products: React.FC = () => {
         }}
       >
         <SimpleSwiper
-          ref={productsRef}
           spaceBetween={10}
           breakpoints={{
             768: {
