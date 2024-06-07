@@ -14,7 +14,6 @@ const Alert: React.FC = () => {
     items-center
     justify-center
     py-6
-    mt-[32px]
       bg-yellow-500
       text-white
 "
