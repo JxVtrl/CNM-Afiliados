@@ -39,7 +39,7 @@ flex flex-col justify-between gap-5
 "
           >
             <h3>
-              <small>1o Estágio:</small> Limpeza do organismo
+              1o Estágio: Limpeza do organismo
             </h3>
             <Space height="10px" />
 
@@ -59,7 +59,7 @@ flex flex-col justify-between gap-5
 
           <li>
             <h3>
-              <small>2o Estágio:</small> Manutenção e tratamento da abstnência
+              2o Estágio: Manutenção e tratamento da abstnência
             </h3>
             <Space height="10px" />
 
