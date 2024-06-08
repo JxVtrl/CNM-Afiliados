@@ -66,6 +66,7 @@ function App() {
           }}
           style={{
             textTransform: "uppercase",
+            fontWeight: "bold",
           }}
         />
       </Wrapper>
