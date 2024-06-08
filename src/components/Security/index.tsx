@@ -11,11 +11,11 @@ const Security: React.FC = () => {
           content: "gap-5 flex flex-col",
         }}
       >
-      <h2>
+      <h1>
           <b>Satisfação total</b> ou seu dinheiro de volta!
-        </h2>
+        </h1>
       <div
-        className="py-10 px-5 text-center relative max-w-[720px] gap-5 flex flex-col m-auto"
+        className="py-2 px-5 text-center relative max-w-[720px] gap-5 flex flex-col m-auto"
         style={{
           borderRadius: "10px 42px 10px 10px",
         }}
@@ -58,9 +58,6 @@ const Security: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
-        <div className="w-[175px] m-auto md:absolute md:bottom-[-75px] md:left-[-75px]">
-          <img src="src/assets/selo.png" alt="selo" />
         </div>
       </div>
       <CTAButton/>
