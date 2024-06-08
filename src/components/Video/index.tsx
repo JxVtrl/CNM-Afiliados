@@ -4,7 +4,7 @@ import React from "react"
 const Video: React.FC = () => {
   const { product } = useApp()
   return (
-    <div className="w-full max-w-[750px] h-full min-h-[350px] max-h-[500px]">
+    <div className="w-full max-w-[750px] h-full">
       <iframe
         src={product?.productVideo}
         title="YouTube video player"
