@@ -7,14 +7,23 @@ const Logo: React.FC = () => {
   if(!product) return null
   
   return (
-    <div className="w-full flex items-center justify-center pt-2 pb-2">
+    <div className="w-full flex items-center justify-center pt-2 pb-2 relative">
+      <img
+        src='/cupom.png'
+        alt="Cupom de desconto"
+        className="absolute top-0 right-[24px] w-[150px]
+"
+      />
+      
+      
+      
       <img
         src={
           'https:'+product?.logo ||
           ""
         }
         alt={product?.title || "logo"}
-        className="max-w-[350px] max-h-[350px] w-full"
+        className="max-w-[350px] max-h-[350px] w-full mt-12"
         style={{
           aspectRatio: 1,
         }}
