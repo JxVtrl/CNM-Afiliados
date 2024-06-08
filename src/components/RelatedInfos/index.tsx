@@ -39,7 +39,7 @@ const RelatedInfos: React.FC = () => {
           </TabsContent>
         ))}
       </Tabs>
-      <CTAButton />
+      <CTAButton position={product?.relatedInfo.title} />
     </Wrapper>
   )
 }

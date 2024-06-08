@@ -60,7 +60,7 @@ const Security: React.FC = () => {
           </div>
         </div>
       </div>
-      <CTAButton/>
+      <CTAButton position="Satisfação total ou seu dinheiro de volta!"/>
     </Wrapper>
   )
 }

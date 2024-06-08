@@ -33,7 +33,7 @@ md:w-[unset]
             />
         ))}
       </div>
-      <CTAButton />
+      <CTAButton position={product?.testimonials.title} />
     </Wrapper>
   )
 }

@@ -43,7 +43,7 @@ place-self-center
           </div>
           
           <Space height="25px" />
-          <CTAButton />
+          <CTAButton position="O que especialistas falam do Champyx em gotas?"/>
     </Wrapper>
   )
 }

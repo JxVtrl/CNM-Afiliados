@@ -48,7 +48,8 @@ place-self-center
 
       <Space height="20px" />
 
-      <CTAButton />
+      <CTAButton position="O CHAMPYX EM GOTAS É 7 VEZES MAIS PODEROSO DO QUE AS PÍLULAS,
+        COMPRIMIDOS E ADESIVOS"/>
     </Wrapper>
   )
 }

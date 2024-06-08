@@ -81,7 +81,7 @@ function App() {
         ) : product?.productVideo ? (
           <Video />
         ) : null}
-        <CTAButton />
+        <CTAButton position="video" />
       </Wrapper>
 
       <Space height="55px" />

@@ -1,14 +1,15 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React from "react";
-import { Button } from "../ui/button";
-import { useApp } from "@/context";
-import { motion } from "framer-motion";
-import { useAnalyticsEvent } from "@/utils/useAnalyticsEvent";
+import React from "react"
+import { Button } from "../ui/button"
+import { useApp } from "@/context"
+import { motion } from "framer-motion"
+import { useAnalyticsEvent } from "@/utils/useAnalyticsEvent"
+import DataLayer from "@/utils/DataLayer"
 
 type CTAProps = {
-text?: string
+  text?: string
+  position?: string
 }
-
 
 const CTAButton: React.FC<CTAProps> = ({
   text = (
@@ -16,14 +17,15 @@ const CTAButton: React.FC<CTAProps> = ({
       QUERO PARAR DE FUMAR
       <small>(ADICIONAR AO CARRINHO)</small>
     </>
-)
+  ),
+  position = ''
 }) => {
   const { product, setOnProducts } = useApp()
-  if (!product) return null;
+  if (!product) return null
 
   const handleSlideToProductRated = () => {
     setOnProducts(true)
-  };
+  }
 
   return (
     <div className="relative h-[75px] w-full md:w-[450px]">
@@ -38,8 +40,8 @@ const CTAButton: React.FC<CTAProps> = ({
         }}
         className="absolute w-full h-full"
       >
-      <Button
-        className="bg-green-500 w-full h-full
+        <Button
+          className="bg-green-500 w-full h-full
         text-white
         rounded-md
         shadow-md
@@ -55,22 +57,28 @@ items-center
 
 
 "
-        onClick={() => {
-          useAnalyticsEvent({
-            category: "CTA",
-            action: "click",
-            label: "Going to Checkout",
-          });
+          onClick={() => {
+            useAnalyticsEvent({
+              category: "CTA",
+              action: "click",
+              label: "Going to Checkout",
+            })
 
-          handleSlideToProductRated();
+            DataLayer.clickEvent({
+              pageSection: position || "CTAButton",
+              pageSubsection: "CTAButton",
+              element: text.toString(),
+              elementCategory: "botao",
+            })
+
+            handleSlideToProductRated()
           }}
-       
         >
-        {text}
+          {text}
         </Button>
       </motion.div>
     </div>
-  );
-};
+  )
+}
 
-export default CTAButton;
+export default CTAButton

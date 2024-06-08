@@ -85,7 +85,7 @@ place-self-center
       </div>
       
       <Space height="20px" />
-      <CTAButton />
+      <CTAButton position="Qual o modo correto de uso?"/>
     </Wrapper>
   )
 }

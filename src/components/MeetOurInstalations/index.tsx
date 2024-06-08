@@ -28,7 +28,7 @@ const MeetOurInstalations: React.FC = () => {
         
         <Space height="20px" />
         
-        <CTAButton />
+        <CTAButton position='Conheça nossas instalações' />
 </Wrapper>
             
             );

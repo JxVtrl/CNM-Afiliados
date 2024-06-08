@@ -59,7 +59,7 @@ px-[50px]
       </SimpleSwiper>
       
       <Space height="25px" />
-      <CTAButton />
+      <CTAButton position="CHAMPYX GOTAS TAMBÉM MELHORA E AJUDA NOS SEGUINTES SINTOMAS DE:" />
     </Wrapper>
   )
 }
