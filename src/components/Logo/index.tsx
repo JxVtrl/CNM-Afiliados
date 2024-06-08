@@ -14,9 +14,6 @@ const Logo: React.FC = () => {
         className="absolute top-0 right-[24px] w-[150px]
 "
       />
-      
-      
-      
       <img
         src={
           'https:'+product?.logo ||
