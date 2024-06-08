@@ -5,7 +5,19 @@ import { useApp } from "@/context";
 import { motion } from "framer-motion";
 import { useAnalyticsEvent } from "@/utils/useAnalyticsEvent";
 
-const CTAButton: React.FC = () => {
+type CTAProps = {
+text?: string
+}
+
+
+const CTAButton: React.FC<CTAProps> = ({
+  text = (
+    <>
+      QUERO PARAR DE FUMAR
+      <small>(ADICIONAR AO CARRINHO)</small>
+    </>
+)
+}) => {
   const { product, setOnProducts } = useApp()
   if (!product) return null;
 
@@ -54,13 +66,7 @@ items-center
           }}
        
         >
-          <b>
-          QUERO PARAR DE FUMAR
-          </b>
-          
-          
-          <small>(ADICIONAR AO CARRINHO)</small>
-        
+        {text}
         </Button>
       </motion.div>
     </div>
