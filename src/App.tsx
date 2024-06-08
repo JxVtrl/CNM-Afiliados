@@ -89,44 +89,35 @@ function App() {
         <CTAButton />
       </Wrapper>
 
-      <Space height="75px" />
+      <Space height="55px" />
       
       <Secrets />
       
-      <Space height="75px" />
+      <Space height="55px" />
       
       <Helps/>
       
-      <Space height="75px" />
+      <Space height="55px" />
       
       <SpecialistSay />
       
-      <Space height="75px" />
+      <Space height="55px" />
 
 <ModeOfUse />      
       
-      <Space height="75px" />
-      
-      
-      <MeetOurInstalations />
-      
-      <Space height="75px" />
-      
-      <MorePowerful />
-      
-      <Space height="75px" />
+      <Space height="55px" />
       
       <Testimonials />
 
-      <Space height="75px" />
+      <Space height="55px" />
       
       <Products />
       
-      <Space height="75px" />
+      <Space height="55px" />
       
       <Declarements />
       
-      <Space height="75px" />
+      <Space height="55px" />
 
       <Security />
 

@@ -29,13 +29,16 @@ const CTAButton: React.FC = () => {
       <Button
         className="bg-green-500 w-full h-full
         text-white
-        font-bold
         rounded-md
         shadow-md
         hover:bg-green-600
         transition-all
         duration-300
         ease-in-out
+flex
+flex-col
+justify-center
+items-center
 
 
 
@@ -48,10 +51,17 @@ const CTAButton: React.FC = () => {
           });
 
           handleSlideToProductRated();
-        }}
-      >
-        {product?.ctaCall}
-      </Button>
+          }}
+       
+        >
+          <b>
+          QUERO PARAR DE FUMAR
+          </b>
+          
+          
+          <small>(ADICIONAR AO CARRINHO)</small>
+        
+        </Button>
       </motion.div>
     </div>
   );
