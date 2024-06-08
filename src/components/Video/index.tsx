@@ -11,9 +11,7 @@ const Video: React.FC = () => {
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         style={{
           width: "100%",
-          height: "100%",
-          minHeight: "350px",
-          maxHeight: "500px",
+          aspectRatio: "16/9",
         }}
       ></iframe>
     </div>
