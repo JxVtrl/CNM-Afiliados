@@ -19,7 +19,7 @@ const Faq: React.FC = () => {
   return (
     <Wrapper
       classes={{
-        container: "bg-gray-100 text-black py-10",
+        container: "bg-gray-100 text-black pt-10 pb-5",
       }}
     >
       <h1

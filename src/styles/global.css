@@ -61,23 +61,23 @@ p {
   }
 
   h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   h4 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
     span {
-        font-size: 12px;
+        font-size: 14px;
     }
 
   small {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 

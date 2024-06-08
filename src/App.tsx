@@ -52,12 +52,9 @@ function App() {
     <main className={`relative flex flex-col`} style={{
       backgroundColor: product.backgroundColor,
     }}>
-      {/* <Wallpaper /> */}
-
       <Alert />
       
       <Space height="24px" />
-      
 
       <Wrapper classes={{ content: "gap-5 flex flex-col items-center" }}>
         <h1
