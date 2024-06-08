@@ -7,6 +7,8 @@ const Video: React.FC = () => {
     <div className="w-full max-w-[750px] h-full">
       <iframe
         src={product?.productVideo}
+        // banner
+        placeholder="/champyx.png"
         title="YouTube video player"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         style={{
