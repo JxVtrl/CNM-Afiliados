@@ -121,7 +121,7 @@ function App() {
 
       <Security />
 
-      <Space height="135px" />
+      <Space height="55px" />
 
       <Faq />
 
