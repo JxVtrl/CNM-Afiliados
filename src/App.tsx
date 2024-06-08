@@ -56,7 +56,7 @@ function App() {
 
       <Alert />
       
-      <Space height="45px" />
+      <Space height="24px" />
       
 
       <Wrapper classes={{ content: "gap-5 flex flex-col items-center" }}>
