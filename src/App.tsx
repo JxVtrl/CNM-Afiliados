@@ -17,8 +17,6 @@ import Helps from "./components/Helps"
 import Products from "./components/Products"
 import SpecialistSay from "./components/SpecialistSay"
 import ModeOfUse from "./components/ModeOfUse"
-import MeetOurInstalations from "./components/MeetOurInstalations"
-import MorePowerful from "./components/MorePowerful"
 import Declarements from "./components/Declarements"
 
 function App() {
