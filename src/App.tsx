@@ -75,14 +75,6 @@ function App() {
       <Logo />
 
       <Wrapper classes={{ content: "gap-5 flex flex-col items-center" }}>
-        <h1
-          dangerouslySetInnerHTML={{
-            __html: product?.description || "",
-          }}
-          style={{
-            textTransform: "uppercase",
-          }}
-        />
         <p
           dangerouslySetInnerHTML={{
             __html: product?.text || "",

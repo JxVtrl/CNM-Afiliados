@@ -7,7 +7,7 @@ const Logo: React.FC = () => {
   if(!product) return null
   
   return (
-    <div className="w-full flex items-center justify-center py-10 ">
+    <div className="w-full flex items-center justify-center pt-2 pb-2">
       <img
         src={
           'https:'+product?.logo ||

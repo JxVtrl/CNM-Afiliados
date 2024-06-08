@@ -2,19 +2,11 @@ import React from "react"
 import Wrapper from "../Wrapper"
 import Space from "../Space"
 import CTAButton from "../CTAButton"
+import SimpleSwiper from "../SimpleSwiper"
+import { SwiperSlide } from "swiper/react"
 
 const Helps: React.FC = () => {
-  return (
-    <Wrapper>
-          <h1>CHAMPYX GOTAS TAMBÉM MELHORA E AJUDA NOS SEGUINTES SINTOMAS DE:</h1>
-          <Space height="25px" />
-          <div className="
-            grid
-            grid-cols-1
-            sm:grid-cols-3
-            gap-5
-            ">
-        {[
+  const helps  =[
           {
             title: "MELHORAR A FUNÇÃO PULMONAR",
             text: "Veja os benefícios do CHAMPYX para a melhora do pulmão. Repara das células epiteliais, Remodelação do tecido, Limpeza do sistema imunológico e Crescimento de novos vasos sanguíneos",
@@ -33,13 +25,22 @@ const Helps: React.FC = () => {
             image:
               "https://champyxoficial.com/wp-content/uploads/2024/03/typeelementorsiteurlhttpslaboratoriooficial.comwp-jsonelementsid47c75a67elTypesectionisInnerfalseisLockedfalsesettingsbackground_backgroundgradientbackground_colorFFFFFFbackground_col-6.png",
           },
-        ].map((item, index) => (
-            <div key={index} className="
+        ]
+  return (
+    <Wrapper>
+          <h1>CHAMPYX GOTAS TAMBÉM MELHORA E AJUDA NOS SEGUINTES SINTOMAS DE:</h1>
+          <Space height="25px" />
+      <SimpleSwiper
+      
+      pagination={false}>
+        {helps.map((item, index) => (
+            <SwiperSlide key={index} className="
                 flex
                 flex-col
                 items-center
                 gap-5
                 text-center
+px-[50px]
 ">
                 <img src={item.image} alt={item.title} className="
                     w-full
@@ -53,9 +54,9 @@ const Helps: React.FC = () => {
                 <p className="
                     text-gray-500
 ">{item.text}</p>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </SimpleSwiper>
       
       <Space height="25px" />
       <CTAButton />
