@@ -15,7 +15,7 @@ const CTAButton: React.FC<CTAProps> = ({
   text = (
     <>
       QUERO PARAR DE FUMAR
-      <small>(ADICIONAR AO CARRINHO)</small>
+      <small>(WHATSAPP DO ESPECIALISTA)</small>
     </>
   ),
   position = ''
