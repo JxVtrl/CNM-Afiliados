@@ -20,12 +20,12 @@ const CTAButton: React.FC<CTAProps> = ({
   ),
   position = ''
 }) => {
-  const { product, setOnProducts } = useApp()
+  const { product } = useApp()
   if (!product) return null
 
-  const handleSlideToProductRated = () => {
-    setOnProducts(true)
-  }
+  // const handleSlideToProductRated = () => {
+  //   setOnProducts(true)
+  // }
 
   return (
     <div className="relative h-[75px] w-full md:w-[450px]">
@@ -40,6 +40,7 @@ const CTAButton: React.FC<CTAProps> = ({
         }}
         className="absolute w-full h-full"
       >
+        <a href="https://api.whatsapp.com/send?phone=5521966767962&text=Quero%20saber%20mais%20sobre%20o%20produto%20para%20deixar%20de%20fumar!">
         <Button
           className="bg-green-500 w-full h-full
         text-white
@@ -70,12 +71,11 @@ items-center
               element: text.toString(),
               elementCategory: "botao",
             })
-
-            handleSlideToProductRated()
           }}
         >
           {text}
-        </Button>
+          </Button>
+        </a>
       </motion.div>
     </div>
   )
